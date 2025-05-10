@@ -1,253 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnav Gupta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <!--For the icons-->
     <link rel="stylesheet" href="style.css">
-
-   
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- icons below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <p>Arnav Gupta</p>
+
+    
+
+    <header id="header">
+        <nav id="main-nav">
+            <!-- hamburger icon (for mobile) -->
+            <button id="hamburger-menu">&#9776;</button>
+
             <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experiences" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a id = "about-link" class="active">About</a></li>
+                <li><a id = "experiences-link">Experiences</a></li>
+                <li><a id = "projects-link">Projects</a></li>
+                <!-- <li><a id = "certifications-link">Certifications</a></li> -->
+                <li><a id = "contact-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id = "home">
 
-    
+    <main id = 'main'>
+        <section id="profile">
+            <div id="profile_div">
+                <div class="gradient-border">
+                    <img src="images/picture.jpg" alt="Arnav Gupta" />
+                </div>
+          
+                <div id="profile-items">
+                    <p id="profile-name">Arnav Gupta</p>
+          
+                    <div class="profile-items-div">
+                        <div class="profile-icon-wrapper">
+                            <i class="fas fa-graduation-cap profile-icon"></i>
+                        </div>
 
-        <div id = "biography-container">
-            <div>
-                <img src="images/picture.jpg" alt="Arnav Gupta" id = "picture">
-            </div>
-        
+                        <div class="profile-text-wrapper">
+                            <p class="profile-label">Education</p>
+                            <p class="profile-subtext">BSc Computing Science, UofA</p>
+                        </div>
+                    </div>
+          
+                    <div class="profile-items-div">
+                        <div class="profile-icon-wrapper">
+                            <i class="fas fa-briefcase profile-icon"></i>
+                        </div>
 
-            <div id = 'biography'>
-                <p id = 'biography-title'>Biography</p>
-                <p>Hello! I am Arnav Gupta. I am currently in the University of Alberta. My expertise is Python and SQL databses. Feel free to reach out if you want to discuss more about my skills and experience and how I can make a positive impact for you!</p>
-            </div>
-        </div>
+                        <div class="profile-text-wrapper">
+                            <p class="profile-label">Current</p>
+                            <p class="profile-subtext">SDE Intern @Amazon</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div id = "personal-info-container">
-            <p>Arnav Gupta</p>
-            <div id = 'personal-info-less'>
-                <p>Computer Scientist</p>
-                <a href="https://www.ualberta.ca/en/index.html" id = "personal-info-disk" target="_blank" >University of Alberta</a>
-            </div>
-        
-        </div>
+                <div id = "social-links">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arnav-gupta9000" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://github.com/arnavgupta9000" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="mailto:arnav6@ualberta.ca"><i class="fas fa-envelope fa-lg"></i></a>
+                    </div>
+                  
 
-        <div id="social-links">
-            <a href="mailto:arnav6@ualberta.ca" class="social-icon"><i class="fas fa-envelope"></i> </a>
-            <a href="https://www.linkedin.com/in/arnav-gupta9000" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/arnavgupta9000" target="_blank" class="social-icon"><i class="fab fa-github"></i> </a>
-        </div>
-
-        <div id = 'interest-container'>
-            <div id="interests">
-                <h2>My Interests</h2>
-                <ul class="interest-list">
-                    <li><i class="fas fa-brain"></i> Machine Learning</li>
-                    <li><i class="fas fa-database"></i> SQL Databases</li>
-                    <li><i class="fas fa-flask"></i> Flask Development</li>
-                    <li><i class="fas fa-chart-bar"></i> Data Visualization</li>
-                    <li><i class="fas fa-chart-pie"></i> Matlibplot</li>
-                    <li><i class="fas fa-code"></i> Web Development</li>
-                </ul>
-            </div>
-            
-            <div id="education">
-                <h2>Education/Scholarships</h2>
-                <ul class="education-list">
-                    <li>BSc Computing Science (Specialization), 2023</li>
-                    <ul>
-                        <li>Academic Terms: 4/8</li>
-                    </ul>
-            
-                    <li>Jason Lang Scholarship, 2023</li>
-                    <li>Golden Key International Honours Society Member, 2023-2024</li>
-                    <li>Alexander Rutherford Scholarship, 2022.</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class = "div-spacing-skills"></div> <!--Add this in the home section so the blank space is counted as being a part of there-->
-
-    </section>
-
- 
-
-    <section id="skills">
-        <p>Skills</p>
-        <div class="skills-container">
-            <div class="skill">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <p>SQL</p>
-            </div>
-            
-            <div class="skill">
-                <i class="fab fa-js-square"></i>
-                <p>JavaScript</p>
-            </div>
-
-            <div class="skill">
-                <i class="fab fa-c"></i>
-                <p>C/C++</p>
-            </div>
-
-            
-            <div class="skill">
-                <i class="fab fa-react"></i>
-                <p>React</p>
-            </div>
-
-            <div class="skill">
-                <i class="fas fa-brain"></i>
-                <p>PyTorch</p>
-            </div>
-            
-            <div class="skill">
-                <i class="fas fa-flask"></i>
-                <p>Flask</p>
-            </div>
-            <div class="skill">
-                <i class="fas fa-chart-pie"></i>
-                <p>Matplotlib</p>
-            </div>
-
-            <div class="skill">
-                <i class="fab fa-html5"></i>
-                <p>HTML/CSS</p>
-            </div>
-           
-            
-        </div>
-    </section>
-    
-    
-
-    <section id="experiences">
-        <h2>Experiences</h2>
-        <div class="experience-container">
-            <div class="experience-card">
-                <h3>Code Ninjas Instructor</h3>
-                <p>Code Ninjas</p>
-                <p class="experience-date">Dec 2023 - Present</p>
-                <p class="experience-location">Edmonton, Alberta</p> 
-
-                <ul>
-                    <li>Devloped back-end logic for parsing and matching queries and optimized front-end code in Javascript.</li>
-                    <li>Helped young minds across various coding platforms such as Javascript, Unity, Roblox, and Scratch.</li>
-                    <li>Provided exemplary technical support while mentoring students through coding projects in both Javascript and Scratch.</li>
-                </ul>
-            </div>
-    
-            <div class="experience-card">
-                <h3>Grocery Clerk</h3>
-                <p>Save on Foods</p>
-                <p class="experience-date">April 2023 - Present</p>
-                <p class="experience-location">Edmonton, Alberta</p> 
-
-                <ul>
-                    <li>Demonstrated oustanding customer service acumen with a warm and approachable demanor ensuring a postive customer experience.</li>
-                    <li>Apply strong problem solving skills to address customer inquiries, complaints, and suggestions with efficiency and professionalism.</li>
-                    <li>Thrive in high paced environments managing mutiple tasks simultaneously.</li>
-                </ul>
-            </div>
-    
-            <div class="experience-card">
-                <h3>Hockey Refree</h3>
-                <p>Edmonton Hockey</p>
-                <p class="experience-date">Sept 2018 - March 2020</p>
-                <p class="experience-location">Edmonton, Alberta</p> 
-
-                <ul>
-                    <li>Ensured a fair playing and safe community for all ages.</li>
-                    <li>Demonstrated adept handling of intense siutations, effectively managing players and coaches in a calm and organized manner.</li>
-                    <li>Maintained a high standard by upholding rules and enforcing league requirements.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects">
-        <div class = "project-container">
-            <h2>Projects</h2>
-        
-            
-
-            <div class="project">
-                <img src="images/flask_img.png" alt="Library book viewer page">
-                <div class="project-description">
-                    <a href="https://github.com/arnavgupta9000/Library-Flask" class = "project-link" target="_blank">Library App</a>
-                    <p>Developed a Flask-based library application supporting multiple user accounts with secure login and logout functionality powered by SQL. Enabled users to manage book checkouts, place holds, and join waitlists, ensuring smooth library operations. Designed a clean, well-documented API to streamline interactions and enhance usability.</p>
                 </div>
             </div>
-
-            <div class="project">
-                <img src="images/this_is_the_only_level.png" alt="this_is_the_only_level">
-                <div class="project-description">
-                    <a href="https://github.com/arnavgupta9000/This-Is-The-Only-Level" class = "project-link" target="_blank">This Is The Only Level Recreation</a>
-                    <p>Developed a browser-based recreation of the popular puzzle-platformer game This Is The Only Level using JavaScript and the HTML Canvas API. Features fully responsive player controls, level progression, and unique gameplay mechanics, all optimized for a seamless gaming experience across different levels.</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="images/map.png" alt="Dijkstra's algorithm">
-                <div class="project-description">
-                    <a href="https://github.com/arnavgupta9000/Search-Algorithm-with-Visualization" class = "project-link" target="_blank">Map Visualizer</a>
-                    <p>Implemented a dynamic visualizer for Dijkstra’s and A* algorithms, showcasing their pathfinding processes from an initial state to a goal state. The tool provides a step-by-step visualization of the algorithms' traversal and decision-making, ideal for understanding search optimization in grid-based environments.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-        <section id="contact">
-            <div class = contact-container>
-                <h2>Contact</h2>
-                <ul id="contact-links">
-                    <li><a href="mailto:arnav6@ualberta.ca" class="social-link-link"><i class="fas fa-envelope" ></i>arnav6@ualberta.ca </a></li>
-                    <li><a href="https://www.linkedin.com/in/arnav-gupta9000" target="blank" class="social-link-link"><i class="fab fa-linkedin"></i>Connect with me </a></li>
-                    <li><a href="https://github.com/arnavgupta9000" target="blank" class="social-link-link"><i class="fab fa-github"></i>See my work</a></li>
-                    <li><a href="https://www.instagram.com/arnavgupta9000" target="blank" class="social-link-link"><i class="fab fa-instagram"></i>arnavgupta9000</a></li>
-                    <li><a href="" class="social-link-link"><i style='font-size:31px' class='fab'>&#xf392;</i>the1234plays</a></li>
-
-
-                
-                </ul>
-            </div>
-            <div class = 'copy-right-div'></div>
-            <footer class="copy-right">© 2024 Arnav Gupta. All rights reserved.</footer>
         </section>
-        
-        
-    
 
-    <script src = 'main.js'></script>
+        <section id = "content_section" >
+            <div id="content_div">
+                <div id = "about" class="section">
+                    <div id = "about_main">
+                        <h2 id = "about_h2">About Me</h2>
+
+                        <div id = "about_para" class="toggle-container">
+                            <p>
+                                Hello there! My name is Arnav Gupta, and I'm currently pursuing a Bachelor of Science in Computing Science (Specialization) at the University of Alberta. I'm passionate about designing and developing scalable, efficient software that solves real-world problems and enhances user experiences. My academic journey and personal curiosity have led me to explore a wide range of technical domains, from full-stack web development to machine learning and algorithmic design.
+                                
+                            </p>
+
+                            <div class="more-content hidden-text">
+
+
+                                <p>
+                                    I enjoy building intuitive web applications, developing backend systems, and experimenting with data-driven tools. My tech stack includes Python, JavaScript, SQL, Flask, React, and Matplotlib, and I'm always expanding my skills by diving into new frameworks and technologies. I've built interactive tools like a pathfinding visualizer and a library management system — projects that challenged me to combine clean design with robust functionality.
+                                </p>
+                                <p>
+                                    I  have a strong interest in system design, software architecture, and understanding how large-scale infrastructure works under the hood. I also enjoy breaking down complex problems into modular, testable components and writing code that's both elegant and maintainable
+                                    
+
+                                </p>
+                                <p>
+                                    When I'm not coding, I enjoy reading about tech trends, contributing to open-source, and finding new ways to bring creative ideas to life through code.
+                                </p>
+                            </div>
+                            <a class="toggle-link bounce-link">Show More</a>
+
+                              
+                        </div>
+
+                        <div id = 'interests-wrapper'>
+                            <div id = 'interests' class = 'half'>
+                                <h2>Interests</h2>
+                                <ul>
+                                    <li> Machine Learning</li>
+                                    <li> SQL Databases</li>
+                                    <li> Data Visualization</li>
+                                    <li> Web Development</li>
+                                    <li> Computer Vision</li>
+                                    <li> Software Architecture</li>
+                                </ul>
+                            </div>
+
+                            <div id = 'achievements' class = 'half'>
+                                <h2>Education</h2>
+                                <ul>
+                                    <li>BSc Computing Science (Specialization), 2023
+                                        <ul>
+                                            <li>Academic Terms: 6/8 </li>
+                                        </ul>
+                                        
+                                    </li>
+
+                                    <li>Jason Lang Scholarship, 2023-2024</li>
+                                    <li>Golden Key International Honours Society Member, 2023-2024</li>
+                                    <li>Alexander Rutherford Scholarship, 2022</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- skills  -->
+                        <div id="skills">
+                            <h3>Skills</h3>
+                
+                            <div class="skills-grid">
+                                <!-- full width -->
+                                <div class="skill-category full-width">
+                                    <h4>Languages</h4>
+                                    <div class="skill-list">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">JavaScript</span>
+                                        <span class="skill-badge">C</span>
+                                        <span class="skill-badge">C++</span>
+                                        <span class="skill-badge">C#</span>
+                                        <span class="skill-badge">MatLab</span>
+                                        <span class="skill-badge">SQL</span>
+                                        <span class="skill-badge">RISK-V</span>
+                                        <span class="skill-badge">HTML</span>
+                                        <span class="skill-badge">CSS</span>
+
+                                    </div>
+                                </div>
+                              
+                                <!-- split second row -->
+                                <div class="skill-category half-width">
+                                    <h4>Libraries & Frameworks</h4>
+                                    <div class="skill-list">
+                                        <span class="skill-badge">Flask</span>
+                                        <span class="skill-badge">React</span>
+                                        <span class="skill-badge">Node.js</span>
+                                        <span class="skill-badge">PyTorch</span>
+                                        <span class="skill-badge">MatPlotLib</span>
+                                    </div>
+                                </div>
+                              
+                                <div class="skill-category half-width">
+                                    <h4>Tools</h4>
+                                    <div class="skill-list">
+                                        <span class="skill-badge">Git</span>
+                                        <span class="skill-badge">GitHub</span>
+                                        <span class="skill-badge">Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end skills -->
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+
+                <div id = "experiences" class="section">
+                   <div id="experiences_main">
+                        <h2 id="experiences_h2">Experiences</h2>
+                        
+                        <div class="timeline">
+                            
+                            <!-- Amazon SDE Intern -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-card">
+                                    <div class="card-header">
+                                        <img src="images/amazon-logo.png" alt="Amazon Logo" class="company-logo">
+                                        <div class="header-details">
+                                            <h2>Software Development Engineer Intern</h2>
+                                            <div class="company-name">Amazon</div>
+                                            <div class="timeline-period">May 2025 - August 2025</div>
+                                            <div class="location">Vancouver, British Columbia</div>
+                                        </div>
+                                    </div>
+                                    <ul class="bullet-points">
+                                        <li>Incoming intern selected for Summer 2025 SDE program, focused on scalable backend systems and distributed infrastructure.</li>
+                                        <li>Will collaborate with experienced engineers to design, implement, and optimize production-level software.</li>
+                                        <li>Expected to gain hands-on experience with Amazon's development lifecycle, codebase, and internal tooling.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Code Ninjas -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-card">
+                                    <div class="card-header">
+                                        <img src="images/code-ninjas-logo.png" alt="Code Ninjas Logo" class="company-logo">
+                                        <div class="header-details">
+                                            <h2>Instructor</h2>
+                                            <div class="company-name">Code Ninjas</div>
+                                            <div class="timeline-period">Dec 2023 - Present</div>
+                                            <div class="location">Edmonton, Alberta</div>
+                                        </div>
+                                    </div>
+                                    <ul class="bullet-points">
+                                        <li> Mentored students across diverse coding environments (JavaScript, Scratch, Roblox, Unity), focusing on efficient 
+                                            debugging, algorithm optimization, leading to enhanced technical confidence and improved outcomes.</li>
+                                        <li> Designed and delivered engaging lessons leveraging game development platforms, improving coding proficiency 
+                                            scores by 25% and reducing debugging time by 15% through tailored guidance.</li>
+                                        <li>Implemented interactive teaching modules and reducing debugging time by 15% by enhancing technical confidence.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                              <!-- DiscoverE -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-card">
+                                    <div class="card-header">
+                                        <img src="images/uofa-logo.png" alt="University of Alberta Logo" class="company-logo">
+                                        <div class="header-details">
+                                            <h2>Curriculum Specialist</h2>
+                                            <div class="company-name">University of Alberta - DiscoverE</div>
+                                            <div class="timeline-period">January 2025 - April 2025</div>
+                                            <div class="location">Edmonton, Alberta</div>
+                                        </div>
+                                    </div>
+                                    <ul class="bullet-points">
+                                        <li>Programmed and tested robotic movements using LEGO SPIKE Prime software, leveraging visual coding tools to 
+                                            implement algorithms for motion control and task automation. </li>
+                                        <li> Designed and implemented software solutions to enhance inventory tracking and preparation workflows, 
+                                            improving resource management efficiency by 15%. </li>
+                                        <li>Leveraged programming expertise to develop and validate innovative software projects, ensuring scalability and 
+                                            effectiveness while contributing to curriculum and tool development.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- third dot -->
+                            <!-- <div class="timeline-dot end-dot"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id = "projects" class="section">
+                    <div id = "projects-main">
+                        <h2>Projects</h2>
+                       
+
+                        <div id = "all-projects">
+
+                            <!-- library app -->
+                            <div class = "project-item">
+                                <div class = "project-card">
+                                    <h2>Library App</h2>
+                                    <div class="projects-tech">
+                                        <ul>
+                                            <li>Flask</li>
+                                            <li>Python</li>
+                                            <li>SQL</li>
+                                            <li>JavaScript</li>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+            
+                                    </div>
+                                    <img src="images/flask_img.png" alt="">
+                                    <div class = project-text>
+                                    
+                                        <div class="toggle-container">
+                                            <p>
+                                                A full-stack library management system with user authentication and book checkout functionality.
+                                            </p>
+
+                                                <div class="more-content hidden-text">
+
+
+                                                    <p>
+                                                        Built a Flask-based web application that simulates a real-world library system, featuring user login/logout, secure session management, and role-based interactions. Implemented SQL-powered backend logic to handle book inventories, waitlists, and reservation logic. The frontend uses HTML, CSS, and JavaScript to deliver a responsive and intuitive user experience. Designed RESTful endpoints to manage book availability, check-ins, and user profiles. Emphasized clean architecture, security, and performance, resulting in a system that can easily scale to support multiple users.
+                                                    </p>
+                                                </div>
+                                                <a class="toggle-link bounce-link">More Info</a>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/arnavgupta9000/Library-Flask" target="_blank" class="github-button">
+                                        View on GitHub
+                                    </a>
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                            <!-- graph visualizer -->
+                            <div class = "project-item">
+                                <div class = "project-card">
+                                    <h2>Graph Visualizer</h2>
+                                    <div class="projects-tech">
+                                        <ul>
+                                            <li>Python</li>
+                                            <li>MatPlotLib</li>
+                                        </ul>
+            
+                                    </div>
+                                    <img src="images/graph_visualizer.png" alt="graph visualizer">
+                                    <div class = project-text>
+                                    
+                                        <div class="toggle-container">
+                                            <p>
+                                                An interactive tool to visualize Dijkstra's and A* search algorithms in action.
+                                            </p>
+
+                                                <div class="more-content hidden-text">
+
+
+                                                    <p>
+                                                        Developed an educational Python application using Matplotlib to dynamically demonstrate the behavior of two key pathfinding algorithms: Dijkstra's and A*. The tool animates the decision-making process as the algorithm searches for the shortest path across a grid, making abstract concepts visually accessible. Designed with user input and grid customization in mind, it allows toggling between algorithms and viewing step-by-step progress. Ideal for teaching or learning fundamental AI search techniques, the project bridges theory with visual clarity in a hands-on format.
+
+                                                    </p>
+                                                </div>
+                                                <a class="toggle-link bounce-link">More Info</a>
+                                        </div>
+                                    </div>
+                                    <a href="https://github.com/arnavgupta9000/maps" target="_blank" class="github-button">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- website -->
+                            <div class = "project-item">
+                                <div class = "project-card">
+                                    <h2>This Website</h2>
+                                    <div class="projects-tech">
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+            
+                                    </div>
+                                    <img src="images/website.png" alt="graph visualizer">
+                                    <div class = project-text>
+                                    
+                                        <div class="toggle-container">
+                                            <p>
+                                                A fully custom personal portfolio website to showcase my projects, skills, and experience that you are viewing now.
+                                            </p>
+
+                                                <div class="more-content hidden-text">
+
+
+                                                    <p>
+                                                        Designed and developed a responsive personal website from scratch using HTML, CSS, and JavaScript to highlight my technical background, projects, and achievements. Implemented smooth UI interactions such as expandable project cards and dynamic layout adjustments to ensure a polished user experience across devices. The site is structured for clarity and accessibility, featuring sections for skills, education, interests, and contact information. This ongoing project emphasizes clean design, modular code, and performance — and serves as a live demonstration of my front-end development abilities.
+                                                    </p>
+                                                </div>
+                                                <a class="toggle-link bounce-link">More Info</a>
+                                        </div>
+                                    </div>
+
+                                    <a href="https://arnavgupta9000.github.io/" target="_blank" class="github-button">
+                                        View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id = "certifications" class="section"></div>
+
+
+                <div id="contact" class="section">
+                    <div class="contact-wrapper">
+                        <h2 class="contact-title">Let's Connect</h2>
+                    
+                        <!-- Email Section -->
+                        <div class="email-box">
+                            <p class="email-label">Email me at:</p>
+                            <div class="email-copy-container">
+                                <span id="email-text">arnav6@ualberta.ca</span>
+                                <button id="copy-button">Copy</button>
+                            </div>
+                            <span id="copy-confirmation" class="copy-confirmation">Copied!</span>
+                        </div>
+                    
+                        <hr class="contact-divider" />
+                    
+                        <!-- Social Links Section -->
+                        <p class="contact-subtext">Or find me on one of these platforms:</p>
+                        <div class="contact-cards">
+                            <a href="https://www.linkedin.com/in/arnav-gupta9000" target="_blank" class="contact-card">
+                            <i class="fab fa-linkedin-in contact-icon"></i>
+                            <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/arnavgupta9000" target="_blank" class="contact-card">
+                            <i class="fab fa-github contact-icon"></i>
+                            <span>GitHub</span>
+                            </a>
+                            <a href="mailto:arnav6@ualberta.ca" class="contact-card">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                  
+
+            </div>
+        </section>
+
+
+       
+          
+
+        
+    </main>
+    <footer class = "footer">© 2025 Arnav Gupta. All rights reserved.</footer>
+
+     
+    
+    <script src="main.js"></script>
 </body>
 </html>
